@@ -1,20 +1,20 @@
-// Función para validar el nombre del jugador (solo letras)
+//Validar el nombre del jugador 
 function validatePlayerName(playerName) {
     return /^[A-Za-z]+$/.test(playerName); // Validar solo letras
 }
 
-// Función para cambiar el nombre del jugador en la interfaz
+// Cambiar el nombre del jugador 
 function updatePlayerName(playerName) {
     document.querySelector('.player-name').textContent = playerName;
 }
 
-// Función para iniciar el juego (ocultar formulario y mostrar el juego)
+// Iniciar el juego 
 function startGame() {
     document.querySelector('.start-game-container').style.display = 'none';
     document.getElementById('game-container').style.display = 'block';
 }
 
-// Función para reiniciar el juego 
+// Reiniciar el juego 
 function resetGame() {
     // Mostrar el formulario de inicio y ocultar el juego
     document.querySelector('.start-game-container').style.display = 'block';
