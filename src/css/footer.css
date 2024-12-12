@@ -1,5 +1,16 @@
 footer {
-    background-color: green;
-    height: 500px;
-    width: 500px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid green;
+
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    border: 1px solid orange;
 }
