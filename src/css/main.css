@@ -1,118 +1,59 @@
-/* Estilos generales del contenedor principal */
-main {
-    height: 100%;
-    width: 100%;
-    border: 1px solid yellow;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f4f4f4; /* Fondo suave */
+
+
+/* Fondo de la página */
+body {
+    background-color: var(--color-yellow);
+    color: #000;  /* Texto en negro */
 }
 
-/* Contenedor principal del juego */
-.main-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    border: 1px solid orange;
+/* Encabezados */
+h1, h2, h3 {
+    color: var(--color-purple);
 }
 
-/* Contenedor del formulario de inicio */
-.start-game-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #ffffff; /* Fondo blanco para el formulario */
-    border: 2px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 400px;
-}
-
-/* Estilo del formulario */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* Estilo del campo de texto para ingresar el nombre */
-#player-name {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-/* Estilo para el botón de iniciar juego */
+/* Botones */
 button {
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: white;
+    background-color: var(--color-orange);
+    color: #fff;  /* Texto en blanco */
     border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: var(--color-pink);
 }
 
-/* Contenedor de la imagen del juego */
-.main-container img {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
+/* Links */
+a {
+    color: var(--color-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-pink);
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: var(--color-purple);
+    padding: 10px;
+}
+
+.navbar a {
+    color: #fff;
+    margin: 0 15px;
+}
+
+/* Fondo de una sección */
+.section {
+    background-color: var(--color-orange);
+    padding: 50px;
     border-radius: 10px;
 }
 
-/* Contenedor para el botón de reset */
-.reset-game-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    border: 1px solid orange;
-}
-
-/* Estilo para el botón de reset */
-#reset-btn {
-    padding: 10px 20px;
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-#reset-btn:hover {
-    background-color: #c82333;
-}
-
-/* Estilos generales para el pie de página */
-footer {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: #222;
-    color: white;
-}
-
-footer p {
-    margin: 0 10px;
+/* Texto destacado */
+.highlight {
+    color: var(--color-pink);
 }
