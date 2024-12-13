@@ -87,6 +87,10 @@ button:hover {
     border: 1px solid orange;
 }
 
+<<<<<<< HEAD
+img {
+    object-fit;
+=======
 /* Estilo para el botón de reset */
 #reset-btn {
     padding: 10px 20px;
@@ -114,4 +118,5 @@ footer {
 
 footer p {
     margin: 0 10px;
+>>>>>>> main
 }
