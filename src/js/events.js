@@ -20,3 +20,5 @@ document.getElementById('start-form').addEventListener('submit', function(event)
 document.getElementById('reset-btn').addEventListener('click', function() {
     resetGame();
 });
+
+

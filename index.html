@@ -36,7 +36,11 @@
             <form id="start-form">
                 <label for="player-name">Ingresa tu nombre:</label>
                 <input type="text" id="player-name" name="player-name" pattern="[A-Za-z]+" title="Solo se permiten letras" required>
-                <button type="submit">Iniciar Juego</button>
+                <button id="openmodal"type="submit">Iniciar Juego</button>
+                <div id='modal' class='modalcontent'>
+                    <span id='closemodalbtn' class="'close">&times;</span>
+                    
+                </div>
             </form>
         </div>
 
