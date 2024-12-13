@@ -2,6 +2,9 @@
 main {
     height: 100%;
     width: 100%;
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
     border: 1px solid #ff901f	(255,144,31);
     justify-content: center;
     align-items: center;
@@ -21,7 +24,7 @@ main {
 
 /* Contenedor del formulario de inicio */
 .start-game-container {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -87,10 +90,9 @@ button:hover {
     border: 1px solid orange;
 }
 
-<<<<<<< HEAD
 img {
     object-fit;
-=======
+}
 /* Estilo para el botón de reset */
 #reset-btn {
     padding: 10px 20px;
@@ -118,5 +120,4 @@ footer {
 
 footer p {
     margin: 0 10px;
->>>>>>> main
 }
