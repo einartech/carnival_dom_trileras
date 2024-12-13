@@ -30,6 +30,25 @@
         <div class="reset-game-container">
             <button>Reset game</button>
         </div>
+         <!-- Formulario de inicio de juego -->
+         <div class="start-game-container">
+            <h1>¡Bienvenide al Juego de Trileras!</h1>
+            <form id="start-form">
+                <label for="player-name">Ingresa tu nombre:</label>
+                <input type="text" id="player-name" name="player-name" pattern="[A-Za-z]+" title="Solo se permiten letras" required>
+                <button type="submit">Iniciar Juego</button>
+            </form>
+        </div>
+
+        <!-- Contenido del juego (se mostrará después de ingresar el nombre) -->
+        <div class="main-container" id="game-container" style="display: none;">
+            <h1>TRILERAS</h1>
+            <img src="./src/img/trileras.jpg" alt="">
+        </div>
+
+        <div class="reset-game-container">
+            <button id="reset-btn">Reset game</button>
+        </div>
         <main>
             <footer>
                 <div class="footer-container">
