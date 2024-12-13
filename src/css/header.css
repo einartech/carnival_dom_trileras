@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+  
+
 header {
     height: 100%;
     width: 100%;
@@ -16,14 +20,34 @@ header {
 
 .player-info {
     border: 1px solid rgb(0, 150, 0);
-    background-color: rgba(7, 150, 0, 0.213);
+    border: 1px solid rgb(0, 255, 225);
+    font-size: 3rem;
+    color: #faf4f4;
+    font-family: Bungee;
+    padding: 10px;
 }
 
 .player-name {
-
+    background-color: black;
     border: 1px solid rgb(0, 255, 225);
+    border-radius: 20px;
+    font-size: 3rem;
+    color: #faf4f4;
+    font-family: Bungee;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
+.player-total-score{
+    background-color: black;
+    border: 1px solid rgb(0, 255, 225);
+    border-radius: 20px;
+    font-size: 3rem;
+    color: #faf4f4;
+    font-family: Bungee;
+    margin-bottom: 20px;
+    text-align: center;
+}
 .player-current-score {
     border: 1px solid rgb(17, 0, 150);
     background-color: rgba(17, 0, 150, 0.213);
