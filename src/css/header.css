@@ -12,9 +12,24 @@ header {
     height: 50%;
     width: 100%;
     border: 1px solid orange;
-
 }
 
 .player-info {
-    border: 1px solid rgb(0, 255, 89);
+    border: 1px solid rgb(0, 150, 0);
+    background-color: rgba(7, 150, 0, 0.213);
+}
+
+.player-name {
+
+    border: 1px solid rgb(0, 255, 225);
+}
+
+.player-current-score {
+    border: 1px solid rgb(17, 0, 150);
+    background-color: rgba(17, 0, 150, 0.213);
+}
+
+.player-timer {
+    border: 1px solid rgb(150, 0, 0);
+    background-color: rgba(150, 0, 0, 0.213);
 }
