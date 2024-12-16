@@ -1,16 +1,17 @@
 import { printVar,typeVar } from '/src/js/helper.js';
-import { getPlayerName } from '/src/js/functions.js';
+import { loadWelcome,getPlayerName } from '/src/js/functions.js';
 
+//DOM ELEMENTS:
 let formPlayerName = document.getElementById("start-form");
+
+
+
+//EVENTS:
+
+// document.addEventListener("DOMContentLoaded", loadWelcome)
+
+document.addEventListener("DOMContentLoaded", loadWelcome);
 formPlayerName.addEventListener("submit", getPlayerName);
-
-
-
-
-
-
-
-
 
 
 
