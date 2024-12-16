@@ -24,8 +24,13 @@ let myModal= document.querySelector(".start-game-container");
 myModal.style.display="none";
 }
 
-
-
+// score
+function incrementScore() {
+    const scoreElement = document.querySelector('.player-total-score');
+    const currentScore = parseInt(scoreElement.textContent, 0) || 0;
+    const newScore = currentScore + 1;
+    scoreElement.textContent = newScore;
+  }
 
 
 

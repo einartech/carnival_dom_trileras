@@ -17,8 +17,10 @@ let formPlayerName = document.getElementById("start-form");
 formPlayerName.addEventListener("submit", getPlayerName);
 
 
+// score
 
-
+const winButton = document.getElementById('winButton');
+winButton.addEventListener('click', incrementScore);
 
 
 
