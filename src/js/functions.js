@@ -1,7 +1,27 @@
-function validatePlayerName(event) {
-    event.preventDefault();  // Evita que el formulario se envíe
 
-    console.log("Has insertado un playername");
+function getPlayerName(event) {
+     event.preventDefault();
+    let getPlayerNameFromInput = document.getElementById('player-name').value;
+    console.log(`0 > getPlayerName >> ${getPlayerNameFromInput}`);
+    setPlayerName(getPlayerNameFromInput)
+}
+
+
+function setPlayerName(playerName) {
+    console.log(`0 > setPlayerName >> ${playerName}`);
+   let updatePlayerName = document.querySelector(".player-name");
+   updatePlayerName.textContent=playerName;
+   console.log(`1 > setPlayerName >> ${playerName}`);
+  
+   setTimeout(hidePlayerModal, 2000);
+
+}
+
+function hidePlayerModal (){
+console.log(`0 > hidePlayerModal >> ...`);
+
+let myModal= document.querySelector(".start-game-container");
+myModal.style.display="none";
 }
 
 
@@ -12,7 +32,18 @@ function validatePlayerName(event) {
 
 
 
-export {validatePlayerName}
+
+
+
+
+
+export {getPlayerName}
+
+
+
+
+
+
 
 
 

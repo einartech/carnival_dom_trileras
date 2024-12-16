@@ -1,5 +1,5 @@
 import { printVar,typeVar } from '/src/js/helper.js';
-import { validatePlayerName } from '/src/js/functions.js';
+import { getPlayerName } from '/src/js/functions.js';
 // import {add, reset, decrease} from './counter.js'
 
 
@@ -14,7 +14,7 @@ import { validatePlayerName } from '/src/js/functions.js';
 // modalPlayerInfo.addEventListener("click", validatePlayerName);
 
 let formPlayerName = document.getElementById("start-form");
-formPlayerName.addEventListener("submit", validatePlayerName);
+formPlayerName.addEventListener("submit", getPlayerName);
 
 
 
