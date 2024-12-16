@@ -1,17 +1,5 @@
 import { printVar,typeVar } from '/src/js/helper.js';
 import { getPlayerName } from '/src/js/functions.js';
-// import {add, reset, decrease} from './counter.js'
-
-
-//PASOS A SEGUIR!
-//1.- AL CLICAR EL BOTON, DEBE HACER UN CONSOLE.LOG OK
-//1.- DIVIDIR ZONAS, LOS EVENT LISTENERS EN EVENTS Y LAS FUNCIONES EN EL OTRO LADO
-
-// let formPlayerName=document.getElementById("player-name");
-// console.log(formPlayerName)
-
-// let modalPlayerInfo=document.getElementById("openmodal");
-// modalPlayerInfo.addEventListener("click", validatePlayerName);
 
 let formPlayerName = document.getElementById("start-form");
 formPlayerName.addEventListener("submit", getPlayerName);
