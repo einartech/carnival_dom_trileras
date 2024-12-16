@@ -5,9 +5,10 @@ main {
     border: 1px solid yellow;
     display: flex;
     flex-direction: column;
+    border: 1px solid #ff901f	(255,144,31);
     justify-content: center;
     align-items: center;
-    background-color: #f4f4f4; /* Fondo suave */
+    background-color: 	#8c1eff	(140,30,255)
 }
 
 /* Contenedor principal del juego */
@@ -18,7 +19,7 @@ main {
     justify-content: space-between;
     height: 100%;
     width: 100%;
-    border: 1px solid orange;
+    border: 1px solid #ff901f	(255,144,31);
 }
 
 /* Contenedor del formulario de inicio */
@@ -28,8 +29,8 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #ffffff; /* Fondo blanco para el formulario */
-    border: 2px solid #ccc;
+    background-color:	#ffd319	(255,211,25)
+    border: 2px solid 	#8c1eff	(140,30,255)
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -48,7 +49,7 @@ form {
 #player-name {
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid 	#8c1eff	(140,30,255)
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
@@ -57,8 +58,8 @@ form {
 /* Estilo para el botón de iniciar juego */
 button {
     padding: 10px 20px;
-    background-color: #28a745;
-    color: white;
+    background-color: #f222ff	(242,34,255);
+    color: 	#ffd319	(255,211,25)
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -67,7 +68,7 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: 	#ff2975	(255,41,117);
 }
 
 /* Contenedor de la imagen del juego */
@@ -89,15 +90,14 @@ button:hover {
     border: 1px solid orange;
 }
 
-<<<<<<< HEAD
 img {
     object-fit;
-=======
+}
 /* Estilo para el botón de reset */
 #reset-btn {
     padding: 10px 20px;
     background-color: #dc3545;
-    color: white;
+    color: 	#ffd319	(255,211,25)
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -115,7 +115,7 @@ footer {
     justify-content: center;
     padding: 10px;
     background-color: #222;
-    color: white;
+    color: 	#ffd319	(255,211,25)
 }
 
 footer p {
