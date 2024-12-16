@@ -1,29 +1,23 @@
 import { printVar,typeVar } from '/src/js/helper.js';
-import { getPlayerName } from '/src/js/functions.js';
-// import {add, reset, decrease} from './counter.js'
+import { loadWelcome,getPlayerName } from '/src/js/functions.js';
 
-
-//PASOS A SEGUIR!
-//1.- AL CLICAR EL BOTON, DEBE HACER UN CONSOLE.LOG OK
-//1.- DIVIDIR ZONAS, LOS EVENT LISTENERS EN EVENTS Y LAS FUNCIONES EN EL OTRO LADO
-
-// let formPlayerName=document.getElementById("player-name");
-// console.log(formPlayerName)
-
-// let modalPlayerInfo=document.getElementById("openmodal");
-// modalPlayerInfo.addEventListener("click", validatePlayerName);
-
+//DOM ELEMENTS:
 let formPlayerName = document.getElementById("start-form");
+
+
+
+//EVENTS:
+
+// document.addEventListener("DOMContentLoaded", loadWelcome)
+
+document.addEventListener("DOMContentLoaded", loadWelcome);
 formPlayerName.addEventListener("submit", getPlayerName);
 
 
-
-
-
-
-
-
-
+  // Jugador elige el vaso 
+  let playerChoice = parseInt(prompt("Elige un vaso (1, 2 o 3):")); // Input del jugador
+  playGame(playerChoice);
+  
 
 
 

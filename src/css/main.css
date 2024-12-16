@@ -1,123 +1,111 @@
-/* Estilos generales del contenedor principal */
-main {
-    height: 100%;
-    width: 100%;
-    border: 1px solid yellow;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #ff901f (255, 144, 31);
-    justify-content: center;
-    align-items: center;
-    background-color: #8c1eff (140, 30, 255)
-}
-
 /* Contenedor principal del juego */
 .main-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    border: 1px solid #ff901f (255, 144, 31);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  object-fit: cover;
+  justify-content: space-between;
+  min-height: auto;
+  border: 1px solid #ff901f (255, 144, 31);
 }
+
+.vasos {
+  width: 30%;
+}
+
+.pelota {
+  width: 8%;
+}
+
+
+
 
 /* Contenedor del formulario de inicio */
 .start-game-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* background-color: #ffd319 (255, 211, 25); */
-    background-color: #c82333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: #ffd319 (255, 211, 25); */
+  background-color: #c82333;
 
-    border: 2px solid #8c1eff (140, 30, 255);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 400px;
+  border: 2px solid #8c1eff (140, 30, 255);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 400px;
 }
 
 /* Estilo del formulario */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* Estilo del campo de texto para ingresar el nombre */
 #player-name {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #8c1eff (140, 30, 255) border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #8c1eff (140, 30, 255);
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Estilo para el botón de iniciar juego */
 button {
-    padding: 10px 20px;
-    background-color: #f222ff (242, 34, 255);
-    color: #ffd319 (255, 211, 25) border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
+  padding: 10px 20px;
+  background-color: #f222ff (242, 34, 255);
+  color: #ffd319 (255, 211, 25);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #ff2975 (255, 41, 117);
+  background-color: #ff2975 (255, 41, 117);
 }
 
-/* Contenedor de la imagen del juego */
-.main-container img {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
+
 
 /* Contenedor para el botón de reset */
 .reset-game-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    border: 1px solid orange;
-}
-
-img {
-    object-fit;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  border: 1px solid orange;
 }
 
 /* Estilo para el botón de reset */
 #reset-btn {
-    padding: 10px 20px;
-    background-color: #dc3545;
-    color: #ffd319 (255, 211, 25) border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: #ffd319 (255, 211, 25);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
 }
 
 #reset-btn:hover {
-    background-color: #c82333;
+  background-color: #c82333;
 }
 
-/* Estilos generales para el pie de página */
-footer {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: #222;
-    color: #ffd319 (255, 211, 25)
-}
+/*estilos para mobil*/
+@media screen and(max-width: 480px) {}
 
-footer p {
-    margin: 0 10px;
-}
+/* Estilos  para tablettes */
+@media screen and (min-width: 768px) {}
+
+/* Estilos  para desktops */
+@media screen and (min-width: 1024px) {}

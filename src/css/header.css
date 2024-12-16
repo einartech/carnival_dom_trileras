@@ -3,16 +3,19 @@
   
 
 header {
-    height: 100%;
-    width: 100%;
+    
+    height: auto;
+    width: auto;
     border: 1px solid red;
 }
 
 .header-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
     align-items: center;
-    flex-direction: row;
-    justify-content:space-around;
+    
+    transition: all 300ms ease-in-out; /* Ajusta el tiempo de transición */
     height: 50%;
     width: 100%;
     border: 1px solid orange;
@@ -30,8 +33,8 @@ header {
 .player-name {
     background-color: black;
     border: 1px solid rgb(0, 255, 225);
-    border-radius: 20px;
     font-size: 3rem;
+    border-radius: 20px;
     color: #faf4f4;
     font-family: Bungee;
     margin-bottom: 20px;
@@ -41,8 +44,8 @@ header {
 .player-total-score{
     background-color: black;
     border: 1px solid rgb(0, 255, 225);
-    border-radius: 20px;
     font-size: 3rem;
+    border-radius: 20px;
     color: #faf4f4;
     font-family: Bungee;
     margin-bottom: 20px;
@@ -52,7 +55,6 @@ header {
     background-color: black;
     border: 1px solid rgb(0, 255, 225);
     border-radius: 20px;
-    font-size: 3rem;
     color: #faf4f4;
     font-family: Bungee;
     margin-bottom: 20px;
@@ -62,17 +64,89 @@ header {
 .player-timer {
     background-color: black;
     border: 1px solid rgb(0, 255, 225);
-    border-radius: 20px;
     font-size: 3rem;
+    border-radius: 20px;
     color: #faf4f4;
     font-family: Bungee;
     margin-bottom: 20px;
     text-align: center;
 }
 
+/*quiero que las transiciones no sean tan duras*/
+.player-info,
+.player-name,
+.player-total-score,
+.player-timer {
+    font-size: 3rem;/*medidas letra para que se vea bien*/
+    transition: all 300ms ease-in-out;/*tiempo transicion*/
+}
+
+
 @media screen and(max-width: 480px){
-    .header-container {
-        flex-direction: column;
+    .player-info,
+    .player-name,
+    .player-total-score,
+    .player-timer {
+        font-size: 1rem;
     }
+
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+        width: 100%;
+    }
+
+    .button-container { 
+    gap: 15px;
+    }
+
+    .button {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+
     
+}
+    
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos específicos para tablets */
+    .player-info,
+    .player-name,
+    .player-total-score,
+    .player-timer {
+        font-size: 2rem;
+    }
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+        width: 100%;
+    }
+
+    .button-container { 
+    gap: 15px;
+    }
+
+
+}
+@media screen and (min-width: 1024px) {
+    /* Estilos específicos para desktops */
+    .player-info,
+    .player-name,
+    .player-total-score,
+    .player-timer {
+        font-size: 3rem;
+    }
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+        width: 100%;
+    }
+
+    .button-container { 
+    gap: 15px;
+    }
 }

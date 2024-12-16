@@ -1,11 +1,25 @@
 
+function loadWelcome() {
+    console.log(`0 > loadWelcome >> All contents loaded`);
+}
+
 function getPlayerName(event) {
      event.preventDefault();
     let getPlayerNameFromInput = document.getElementById('player-name').value;
     console.log(`0 > getPlayerName >> ${getPlayerNameFromInput}`);
-    setPlayerName(getPlayerNameFromInput)
+
+    setPlayerName(getPlayerNameFromInput);
+    showNewModal(getPlayerNameFromInput);
 }
 
+function showNewModal(playerName){
+    console.log(`0 > showNewModal >> ${playerName}`);
+    let getTitle = document.querySelector(".modal-title");
+    getTitle.textContent=`${playerName} el juego de las Trileras esta a punto de empezar...`;
+    let getform = document.querySelector("form");
+    getform.style.display="none";
+
+}
 
 function setPlayerName(playerName) {
     console.log(`0 > setPlayerName >> ${playerName}`);
@@ -13,7 +27,7 @@ function setPlayerName(playerName) {
    updatePlayerName.textContent=playerName;
    console.log(`1 > setPlayerName >> ${playerName}`);
   
-   setTimeout(hidePlayerModal, 2000);
+   setTimeout(hidePlayerModal, 4000);
 
 }
 
@@ -25,19 +39,7 @@ myModal.style.display="none";
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-export {getPlayerName}
+export { loadWelcome,getPlayerName }
 
 
 
