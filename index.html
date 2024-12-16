@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./src/css/footer.css">
     <link rel="stylesheet" href="./src/css/header.css">
     <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <title>Trileras</title>
 </head>
 
@@ -14,19 +17,19 @@
     <header>
         <div class="header-container">
             <div class="player-info">
-                <div class="player-name">Juane</div>
-                <div class="player-total-score">Score 0</div>
+                <div class="player-name">Maria</div>
+                <div class="player-total-score">9 puntos</div>
             </div>
             <div class="player-info">
-            <div class="player-current-score">high score</div>
-            <div class="player-timer">5 seg</div>
-        </div>
+                <div class="player-timer">5 seg</div>
+                <div class="player-current-score">high score</div>
+            </div>
 
         </div>
     </header>
     <main>
         <div class="main-container">
-            <h1>TRILERAS LAS MEJORES</h1>
+            <h1>TRILERAS</h1>
             <img src="./src/img/trileras.jpg" alt="">
         </div>
         <div class="reset-game-container">
@@ -39,16 +42,17 @@
                 <label for="player-name">Ingresa tu nombre:</label>
                 <input type="text" id="player-name" name="player-name" pattern="[A-Za-z]+"
                     title="Solo se permiten letras" required>
-                <button type="submit">Iniciar Juego</button>
+                <button id="openmodal" type="submit">Iniciar Juego</button>
+                <div id='modal' class='modalcontent'>
+                    <span id='closemodalbtn' class="'close">&times;</span>
+                </div>
             </form>
         </div>
-
         <!-- Contenido del juego (se mostrará después de ingresar el nombre) -->
         <div class="main-container" id="game-container" style="display: none;">
-            <h1>TRILERAS</h1>
+            <h1>TRILERITAS</h1>
             <img src="./src/img/trileras.jpg" alt="">
         </div>
-
         <div class="reset-game-container">
             <button id="reset-btn">Reset game</button>
         </div>
@@ -56,12 +60,12 @@
             <footer>
                 <div class="footer-container">
                     <p>Project powered by f5</p>
-                    <p>Alba,Tetiana,Karisha,Guadalupe</p>
+                    <p>Alba,Tetiana,Karisha,Einar,Guadalupe</p>
                 </div>
             </footer>
 </body>
-<script src="./src/js/events.js"></script>
-<script src="./src/js/functions.js"></script>
-<script src="./src/js/helper.js"></script>
+<script type="module" src="./src/js/functions.js"></script> <!-- Primero funciones.js -->
+<script type="module" src="./src/js/events.js"></script> <!-- Luego events.js -->
+<script type="module" src="./src/js/helper.js"></script>
 
 </html>
