@@ -30,11 +30,13 @@
     <main>
         <div class="main-container">
             <h1>TRILERAS</h1>
-            <img src="./src/img/trileras.jpg" alt="">
+            <img src="./src/img/trileras.jpg" alt="imagen del juego incicial con los tres vasos para abajo y la pelota en el vaso de enmedio">
         </div>
+    </main>
+    <content>
         <div class="reset-game-container">
             <button>Reset game</button>
-        </div>
+       </div>
         <!-- Formulario de inicio de juego -->
         <div class="start-game-container">
             <h1>¡Bienvenide al Juego de Trileras!</h1>
@@ -43,21 +45,14 @@
                 <input type="text" id="player-name" name="player-name" pattern="[A-Za-z]+"
                     title="Solo se permiten letras" required>
                 <button id="openmodal" type="submit">Iniciar Juego</button>
-                <div id='modal' class='modalcontent'>
-                    <span id='closemodalbtn' class="'close">&times;</span>
+                <div id='modal'>
+                    <span id='closemodalbtn'></span>
                 </div>
-            </form>
-        </div>
+                </form>
+                </div>
+                </content>
         <!-- Contenido del juego (se mostrará después de ingresar el nombre) -->
-        <div class="main-container" id="game-container" style="display: none;">
-            <h1>TRILERITAS</h1>
-            <img src="./src/img/trileras.jpg" alt="">
-        </div>
-        <div class="reset-game-container">
-            <button id="reset-btn">Reset game</button>
-        </div>
-        <main>
-            <footer>
+          <footer>
                 <div class="footer-container">
                     <p>Project powered by f5</p>
                     <p>Alba,Tetiana,Karisha,Einar,Guadalupe</p>
@@ -66,6 +61,5 @@
             <script type="module" src="./src/js/functions.js"></script> <!-- Primero funciones.js -->
             <script type="module" src="./src/js/events.js"></script> <!-- Luego events.js -->
             <script type="module" src="./src/js/helper.js"></script>
-        </body>
-
-</html>
+         </body>
+         </html>
