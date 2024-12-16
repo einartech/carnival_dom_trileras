@@ -16,6 +16,7 @@ document.getElementById('start-form').addEventListener('submit', function(event)
     }
 });
 
+
 // Botón de reinicio del juego
 document.getElementById('reset-btn').addEventListener('click', function() {
     resetGame();

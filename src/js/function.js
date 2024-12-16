@@ -3,6 +3,10 @@ function validatePlayerName(playerName) {
     return /^[A-Za-z]+$/.test(playerName); // Validar solo letras
 }
 
+//mostrar el nombre del jugador en la pantalla 
+
+const displayName = document.getElementById('player-name');
+
 // Cambiar el nombre del jugador 
 function updatePlayerName(playerName) {
     document.querySelector('.player-name').textContent = playerName;
