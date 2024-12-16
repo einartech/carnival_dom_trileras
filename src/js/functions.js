@@ -27,7 +27,7 @@ function setPlayerName(playerName) {
    updatePlayerName.textContent=playerName;
    console.log(`1 > setPlayerName >> ${playerName}`);
   
-   setTimeout(hidePlayerModal, 9000);
+   setTimeout(hidePlayerModal, 4000);
 
 }
 
