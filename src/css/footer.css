@@ -4,13 +4,16 @@
   width: 100%;
   border: 1px solid green;
 }
-.footer-container p {
+.footer-container {
   display: flex;
+  flex-direction: column;
   font-size: small;
+ 
 }
 
+
 @media screen and(max-width: 480px) {
-    coders {
+ coders {
   font-size: 1rem;
   transition: all 300ms ease-in-out; /* Ajusta el tiempo de transición */
 }
@@ -24,12 +27,13 @@
 @media screen and (min-width: 1024px) {
     coders {
         display: flex;
-        flex-direction: column;
-        flex-wrap: no-wrap;
         font-size: 3rem;
         transition: all 300ms ease-in-out; /* Ajusta el tiempo de transición */
         
     }
+}
+
+
 
 
 /* 
