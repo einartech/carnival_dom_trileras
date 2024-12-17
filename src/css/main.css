@@ -12,23 +12,15 @@
 
 .vasos {
   width: 30%;
-<<<<<<< HEAD
 }
 .pelota {
   width: 8%;
 }
 
-=======
-}
-
 .pelota {
   width: 8%;
 }
 
-
-
-
->>>>>>> f76ec34d44b5fc37ae9f366be7350d46ce49b1ed
 /* Contenedor del formulario de inicio */
 .start-game-container {
   display: flex;
@@ -107,27 +99,26 @@ button:hover {
   background-color: #c82333;
 }
 
-/*estilos para mobil*/
-<<<<<<< HEAD
- {
-  @media screen and(max-width: 480px) transition: all 300ms ease-in-out; /* Ajusta el tiempo de transición */
-}
+/*estilos para movil*/
 
+@media screen and(max-width: 480px) {
+  {
+    font-size: 1rem;
+    transition: all 300ms ease-in-out; /* Ajusta el tiempo de transición */
+}
+}
 /* Estilos  para tablettes */
 @media screen and (min-width: 768px) {
-  transition: all 300ms ease-in-out; /* Ajusta el tiempo de transición */
+  {
+    font-size: 2rem;
+    transition: all 300ms ease-in-out; /* Ajusta el tiempo de transición */
 }
-
+}
 /* Estilos  para desktops */
 @media screen and (min-width: 1024px) {
+ { 
+  font-size: 3rem;
   transition: all 300ms ease-in-out; /* Ajusta el tiempo de transición */
 }
-=======
-@media screen and(max-width: 480px) {}
+}
 
-/* Estilos  para tablettes */
-@media screen and (min-width: 768px) {}
-
-/* Estilos  para desktops */
-@media screen and (min-width: 1024px) {}
->>>>>>> f76ec34d44b5fc37ae9f366be7350d46ce49b1ed
