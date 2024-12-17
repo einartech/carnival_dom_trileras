@@ -15,8 +15,7 @@ formPlayerName.addEventListener("submit", getPlayerName);
 
 
   // Jugador elige el vaso 
-  let playerChoice = parseInt(prompt("Elige un vaso (1, 2 o 3):")); // Input del jugador
-  playGame(playerChoice);
+
   
 
 
