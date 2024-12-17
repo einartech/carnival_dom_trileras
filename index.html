@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./src/css/footer.css">
     <link rel="stylesheet" href="./src/css/header.css">
     <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
@@ -24,38 +25,37 @@
                 <div class="player-timer">5 seg</div>
                 <div class="player-current-score">high score</div>
             </div>
-
         </div>
     </header>
     <main>
         <div class="main-container">
-        <div class="imagenes-cont">
-            <img class="vasos" src="src/img/vaso.jpg" alt="primer vaso del juego">
-            <img class="vasos" src="src/img/vaso.jpg" alt="segundo vaso del juego">
-            <img class="vasos" src="src/img/vaso.jpg" alt="tercer vaso del juego">
-        </div>
+            <div class="imagenes-cont">
+                <img class="vasos" src="src/img/vaso.jpg" alt="primer vaso del juego">
+                <img class="vasos" src="src/img/vaso.jpg" alt="segundo vaso del juego">
+                <img class="vasos" src="src/img/vaso.jpg" alt="tercer vaso del juego">
+            </div>
             <img class="pelota" src="src/img/pelota.jpg" alt="pelota para jugar">
 
-   <div class="reset-game-container">
-            <button>Reset game</button>
-       </div>
+            <div class="reset-game-container">
+                <button>Reset game</button>
+            </div>
 
-        <!-- Formulario de inicio de juego -->
-        <div class="start-game-container">
-            <h1>¡Bienvenide al Juego de Trileras!</h1>
-            <form id="start-form">
-                <label for="player-name">Ingresa tu nombre:</label>
-                <input type="text" id="player-name" name="player-name" pattern="[A-Za-z]+"
-                    title="Solo se permiten letras" required>
-                <button id="openmodal" type="submit">Iniciar Juego</button>
-                <div id='modal'>
-                    <span id='closemodalbtn'></span>
-                </div>
+            <!-- Formulario de inicio de juego -->
+            <div class="start-game-container">
+                <h1>¡Bienvenide al Juego de Trileras!</h1>
+                <form id="start-form">
+                    <label for="player-name">Ingresa tu nombre:</label>
+                    <input type="text" id="player-name" name="player-name" pattern="[A-Za-z]+"
+                        title="Solo se permiten letras" required>
+                    <button id="openmodal" type="submit">Iniciar Juego</button>
+                    <div id='modal'>
+                        <span id='closemodalbtn'></span>
+                    </div>
                 </form>
-                </div>
+            </div>
 
-        <!-- Contenido del juego (se mostrará después de ingresar el nombre) -->
-          <footer>
+            <!-- Contenido del juego (se mostrará después de ingresar el nombre) -->
+            <footer>
                 <div class="footer-container">
                     <p>Project powered by f5</p>
                     <p>Alba,Tetiana,Karisha,Einar,Guadalupe</p>
@@ -64,5 +64,6 @@
             <script type="module" src="./src/js/functions.js"></script> <!-- Primero funciones.js -->
             <script type="module" src="./src/js/events.js"></script> <!-- Luego events.js -->
             <script type="module" src="./src/js/helper.js"></script>
-         </body>
-         </html>
+</body>
+
+</html>
