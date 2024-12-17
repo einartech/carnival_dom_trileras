@@ -1,6 +1,3 @@
-
-
-
 /* Contenedor principal del juego */
 .main-container {
   display: flex;
@@ -13,15 +10,12 @@
   border: 1px solid #ff901f (255, 144, 31);
 }
 
-.vasos{
-    width:30%;
+.vasos {
+  width: 30%;
 }
 .pelota {
-    width: 8%;
+  width: 8%;
 }
-
-    
-
 
 /* Contenedor del formulario de inicio */
 .start-game-container {
@@ -74,8 +68,6 @@ button:hover {
   background-color: #ff2975 (255, 41, 117);
 }
 
-
-
 /* Contenedor para el botón de reset */
 .reset-game-container {
   display: flex;
@@ -104,14 +96,16 @@ button:hover {
 }
 
 /*estilos para mobil*/
-@media screen and(max-width: 480px) {
+ {
+  @media screen and(max-width: 480px) transition: all 300ms ease-in-out; /* Ajusta el tiempo de transición */
 }
 
 /* Estilos  para tablettes */
 @media screen and (min-width: 768px) {
+  transition: all 300ms ease-in-out; /* Ajusta el tiempo de transición */
 }
 
 /* Estilos  para desktops */
 @media screen and (min-width: 1024px) {
-  
+  transition: all 300ms ease-in-out; /* Ajusta el tiempo de transición */
 }
