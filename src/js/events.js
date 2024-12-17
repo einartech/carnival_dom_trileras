@@ -1,17 +1,23 @@
 import { printVar,typeVar } from '/src/js/helper.js';
-import { getPlayerName } from '/src/js/functions.js';
+import { loadWelcome,getPlayerName } from '/src/js/functions.js';
 
+//DOM ELEMENTS:
 let formPlayerName = document.getElementById("start-form");
+
+
+
+//EVENTS:
+
+// document.addEventListener("DOMContentLoaded", loadWelcome)
+
+document.addEventListener("DOMContentLoaded", loadWelcome);
 formPlayerName.addEventListener("submit", getPlayerName);
 
 
-
-
-
-
-
-
-
+  // Jugador elige el vaso 
+  let playerChoice = parseInt(prompt("Elige un vaso (1, 2 o 3):")); // Input del jugador
+  playGame(playerChoice);
+  
 
 
 
