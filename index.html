@@ -30,14 +30,14 @@
     <main>
         <div class="main-container">
             <div class="imagenes-cont">
-                <img class="vasos" src="src/img/vaso.jpg" alt="primer vaso del juego">
-                <img class="vasos" src="src/img/vaso.jpg" alt="segundo vaso del juego">
-                <img class="vasos" src="src/img/vaso.jpg" alt="tercer vaso del juego">
+                <img id="cup1" class="vasos" src="src/img/vaso.jpg" alt="primer vaso del juego">
+                <img id="cup2" class="vasos" src="src/img/vaso.jpg" alt="segundo vaso del juego">
+                <img id="cup3" class="vasos" src="src/img/vaso.jpg" alt="tercer vaso del juego">
             </div>
             <img class="pelota" src="src/img/pelota.jpg" alt="pelota para jugar">
-
+git
             <div class="reset-game-container">
-                <button>Reset game</button>
+                <button type="button">Reset game</button>
             </div>
 
             <!-- Formulario de inicio de juego -->
@@ -48,17 +48,18 @@
                     <input type="text" id="player-name" name="player-name" pattern="[A-Za-z]+"
                         title="Solo se permiten letras" required>
                     <button id="openmodal" type="submit">Iniciar Juego</button>
-                    <div id='modal'>
-                        <span id='closemodalbtn'></span>
+                    <div id="modal">
+                        <span id="closemodalbtn"></span>
                     </div>
                 </form>
             </div>
-
+        </div>
+</main>
             <!-- Contenido del juego (se mostrará después de ingresar el nombre) -->
             <footer>
                 <div class="footer-container">
                     <p>Project powered by f5</p>
-                    <p>Alba,Tetiana,Karisha,Guadalupe</p>
+                    <p>Alba,Tetiana,Karisha,Einar,Guadalupe</p>
                 </div>
             </footer>
             <script type="module" src="./src/js/functions.js"></script> <!-- Primero funciones.js -->
