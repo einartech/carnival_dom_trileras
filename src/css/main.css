@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
 /* Contenedor principal del juego */
 .main-container {
   /*contenedor flex*/
@@ -14,7 +16,7 @@
   justify-content: space-between;
   /*altura minima del contenedor automaicamente*/
   min-height: auto;
-  border: 1px solid #ff901f (255, 144, 31);
+  background-color: #161648;
 }
 
 .vasos {
@@ -27,21 +29,17 @@
 .start-game-container {
   /* contenedor flex*/
   display: flex;
- /*los centra en columna*/
+  /*los centra en columna*/
   flex-direction: column;
- /*los ceentra a lo largo del eje principal*/
+  /*los ceentra a lo largo del eje principal*/
   justify-content: center;
   /*a lo largo del eje transversal*/
   align-items: center;
   /*alinea los textos dentro dwel contenedor*/
   text-align: center;
-  /* background-color: #ffd319 (255, 211, 25); */
-  background-color: #c82333;
-
-  border: 2px solid #8c1eff (140, 30, 255);
+  margin: 5px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 80%;
   max-width: 400px;
 }
@@ -68,18 +66,17 @@ form {
 
 /* Estilo para el botón de iniciar juego */
 button {
-  padding: 10px 20px;
-  background-color: #f222ff (242, 34, 255);
-  color: #ffd319 (255, 211, 25);
-  border: none;
-  border-radius: 5px;
+  background-color: rgb(255, 0, 255);
+  color: black;
+  border-radius: 20px;
+  border-top: 5px;
+  border-color: rgb(101, 215, 231);
   cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
+  font-size: 15px;
 }
 
 button:hover {
-  background-color: #ff2975 (255, 41, 117);
+  background-color: rgb(255, 0, 255);
 }
 
 /* Contenedor para el botón de reset */
@@ -90,45 +87,39 @@ button:hover {
   justify-content: space-between;
   height: 100%;
   width: 100%;
-  border: 1px solid orange;
+  color: white;
 }
 
 /* Estilo para el botón de reset */
-#reset-btn {
+.reset-btn {
   padding: 10px 20px;
-  background-color: #dc3545;
-  color: #ffd319 (255, 211, 25);
-  border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s;
 }
 
-#reset-btn:hover {
-  background-color: #c82333;
-}
+.
 
 /*estilos para movil*/
 
 @media screen and(max-width: 480px) {
-  {
+   {
     font-size: 1rem;
     transition: all 300ms ease-in-out; /* Ajusta el tiempo de transición */
-}
+  }
 }
 /* Estilos  para tablettes */
 @media screen and (min-width: 768px) {
-  {
+   {
     font-size: 2rem;
     transition: all 300ms ease-in-out; /* Ajusta el tiempo de transición */
-}
+  }
 }
 /* Estilos  para desktops */
 @media screen and (min-width: 1024px) {
- { 
-  font-size: 3rem;
-  transition: all 300ms ease-in-out; /* Ajusta el tiempo de transición */
+   {
+    font-size: 3rem;
+    transition: all 300ms ease-in-out; /* Ajusta el tiempo de transición */
+  }
 }
-}
-

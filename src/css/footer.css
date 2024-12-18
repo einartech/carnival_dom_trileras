@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+font {
+  color:  white;
+  font-family: bungee;
+  font-size: 15px;
+}
+
 .coders {
   /*define contenedor flex, para distribuir elementos*/
   display: flex;
@@ -5,7 +12,7 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
-  border: 1px solid green;
+
   /*margen arriba y abjo contenedor*/
   margin-block: 10px;
   /*relleno interno*/
@@ -43,6 +50,7 @@
   /*ajusta al 100% contenedor padre*/
   height: 100%;
   width: 100%;
+  color: white;
 }
 
 .footer-container > * {
