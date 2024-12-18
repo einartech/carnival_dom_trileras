@@ -1,11 +1,18 @@
 /* Contenedor principal del juego */
 .main-container {
+  /*contenedor flex*/
   display: flex;
+  /*lineas multiples si no caben en una sola*/
   flex-wrap: wrap;
+  /*centramos elelemtos hijos a lo largo del eje transversal*/
   align-items: center;
+  /*organiza los elementos hijos en columna*/
   flex-direction: column;
+  /*ajusta en copntenido al contenedor*/
   object-fit: cover;
+  /* distribuye espacio libre entre los elementos hijos*/
   justify-content: space-between;
+  /*altura minima del contenedor automaicamente*/
   min-height: auto;
   border: 1px solid #ff901f (255, 144, 31);
 }
@@ -16,17 +23,17 @@
 .pelota {
   width: 8%;
 }
-
-.pelota {
-  width: 8%;
-}
-
 /* Contenedor del formulario de inicio */
 .start-game-container {
+  /* contenedor flex*/
   display: flex;
+ /*los centra en columna*/
   flex-direction: column;
+ /*los ceentra a lo largo del eje principal*/
   justify-content: center;
+  /*a lo largo del eje transversal*/
   align-items: center;
+  /*alinea los textos dentro dwel contenedor*/
   text-align: center;
   /* background-color: #ffd319 (255, 211, 25); */
   background-color: #c82333;
@@ -41,8 +48,11 @@
 
 /* Estilo del formulario */
 form {
+  /*contenedor flex*/
   display: flex;
+  /*los elementos del formulario en una columna*/
   flex-direction: column;
+  /*añade espacio entre los elementos*/
   gap: 10px;
 }
 
