@@ -195,14 +195,16 @@ setTimeout(() => {
 
 }
 
+function selectCup(){
+console.log("hola soy select cup")
+}
 
 
 
 
 
 
-
-export { loadWelcome,getPlayerName }
+export { loadWelcome,getPlayerName,selectCup }
 
 
 

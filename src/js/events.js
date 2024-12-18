@@ -1,9 +1,10 @@
 import { printVar,typeVar } from '/src/js/helper.js';
-import { loadWelcome,getPlayerName } from '/src/js/functions.js';
+import { loadWelcome,getPlayerName,selectCup } from '/src/js/functions.js';
 
 //DOM ELEMENTS:
 let formPlayerName = document.getElementById("start-form");
 
+const cupOneDom = document.querySelector("#cup1")
 
 
 //EVENTS:
@@ -12,6 +13,8 @@ let formPlayerName = document.getElementById("start-form");
 
 document.addEventListener("DOMContentLoaded", loadWelcome);
 formPlayerName.addEventListener("submit", getPlayerName);
+cupOneDom.addEventListener("click", selectCup);
+
 
 
 // score
