@@ -24,11 +24,31 @@ winButton.addEventListener('click', incrementScore);
 
 
   // Jugador elige el vaso 
-  let playerChoice = parseInt(prompt("Elige un vaso (1, 2 o 3):")); // Input del jugador
-  playGame(playerChoice);
+  // let playerChoice = parseInt(prompt("Elige un vaso (1, 2 o 3):")); // Input del jugador
+  // playGame(playerChoice);
   
+  //Click on cup
+  // const cup =  document.getElementsByClassName("vasos");
 
+//console.log(cup)
+ // 
+ // console.log(ball)
+//const startGame = document.querySelector("#openmodal")
+//console.log(startGame)
 
+//const moveCups {
+ // const ball = document.querySelector(".pelota");
+//ball.addClass('isHidden');
+//   ball.setInterval(function(){()},time * 1000)<img class="pelota" src="src/img/pelota.jpg" alt="pelota para jugar">
+// }
+
+//   function winAlert {
+// if {
+
+// }
+//   }
+
+// cup.addEventListener("click", moveCup);
 
 
 
