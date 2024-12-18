@@ -43,7 +43,6 @@ myModal.style.display="none";
 
 }
 
-<<<<<<< HEAD
 // score
 function incrementScore() {
     const scoreElement = document.querySelector('.player-total-score');
@@ -54,16 +53,6 @@ function incrementScore() {
 
 
 
-
-
-
-
-
-
-
-
-export {getPlayerName}
-=======
 
 //Start Trileras Tetiana
 
@@ -129,7 +118,6 @@ const ball = document.querySelector(".pelota");
 
 }
 export { loadWelcome,getPlayerName }
->>>>>>> development
 
 
 
