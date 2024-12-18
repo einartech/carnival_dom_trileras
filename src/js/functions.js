@@ -1,6 +1,7 @@
 
 function loadWelcome() {
     console.log(`0 > loadWelcome >> All contents loaded`);
+    
 }
 
 function getPlayerName(event) {
@@ -10,6 +11,8 @@ function getPlayerName(event) {
 
     setPlayerName(getPlayerNameFromInput);
     showNewModal(getPlayerNameFromInput);
+    defaultPlayerInfo(getPlayerNameFromInput);
+    defaultGameInfo();
 }
 
 function showNewModal(playerName){
@@ -36,9 +39,74 @@ console.log(`0 > hidePlayerModal >> ...`);
 
 let myModal= document.querySelector(".start-game-container");
 myModal.style.display="none";
+
+
 }
 
 
+//Start Trileras Tetiana
+
+
+
+function defaultPlayerInfo (playerName){
+console.log('defaultPlayerInfo')
+
+let playerInfo = {
+    playerName: "${getPlayerNameFromInput}",
+    playerScore: 0,
+    playerHighScore: 0, 
+    playerSeconds: 15,
+    playerWin: false,
+  };
+  console.table(playerInfo)
+  
+}
+
+function defaultGameInfo() {
+    let gameElements = {
+    elementCupOne: false,
+    elementCupTwo: false,
+    elementCupThree: false, 
+    ball: true,
+      };
+
+  startTrileras(gameElements)
+
+//  cupOne = Math.random(Math.max(3));
+}
+
+
+function startTrileras(gameElements) {
+//console.log("nuestra funcion")
+
+moveCups();
+if (gameElements.elementCupOne === true && gameElements.ball=== true) {
+    console.log("La pelota se encuentra en la copa 1")
+    } else if (gameElements.elementCupTwo === true && gameElements.ball=== true) { 
+        console.log("La pelota se encuentra en la copa 2")
+    } else if (gameElements.elementCupThree === true && gameElements.ball=== true) {
+        console.log("La pelota se encuentra en la copa 3")
+    } else {
+        console.log("else")
+    }
+
+
+}
+
+function moveCups() {
+    console.log("cups moved")
+    const cup =  document.querySelector(".vasos");
+
+const cupOne = document.querySelector("#cup1")
+
+const cupTwo = document.querySelector("#cup2")
+
+const cupThree = document.querySelector("#cup3")
+
+const ball = document.querySelector(".pelota");
+
+
+}
 export { loadWelcome,getPlayerName }
 
 
