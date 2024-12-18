@@ -82,20 +82,35 @@ function defaultGameInfo() {
 
   startTrileras(gameElements)
 
-//  cupOne = Math.random(Math.max(3));
+
 }
 
 
 function startTrileras(gameElements) {
-//console.log("nuestra funcion")
+
 setTimeout(() => {
     console.log("El juego esta a punto de empezar.");
     moveCups();
 
   }, 5000);
 
+  let winner = Math.ceil(Math.random() * 3);
+console.log(winner)
 
+if (winner == 1) {
+    console.log("El vaso ganador es el 1")
+    gameElements.elementCupOne === true;
 
+} else if (winner == 2) {
+    console.log("El vaso ganador es el 2")
+    gameElements.elementCupTwo === true;
+
+} else if (winner == 3) {
+    console.log("El vaso ganador es el 3")
+    gameElements.elementCupThree === true;
+} else {
+alert("No has encontrado el vaso ganador");
+}
 
 
 if (gameElements.elementCupOne === true && gameElements.ball=== true) {
@@ -105,7 +120,7 @@ if (gameElements.elementCupOne === true && gameElements.ball=== true) {
     } else if (gameElements.elementCupThree === true && gameElements.ball=== true) {
         console.log("La pelota se encuentra en la copa 3")
     } else {
-        console.log("else")
+        console.log("Has perdido")
     }
 
 
