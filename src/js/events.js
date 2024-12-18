@@ -5,8 +5,8 @@ import { loadWelcome,getPlayerName,selectCup } from '/src/js/functions.js';
 let formPlayerName = document.getElementById("start-form");
 
 const cupOneDom = document.querySelector("#cup1")
-
-
+const cupTwoDom = document.querySelector("#cup2")
+const cupThreeDom = document.querySelector("#cup3")
 //EVENTS:
 
 // document.addEventListener("DOMContentLoaded", loadWelcome)
@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", loadWelcome);
 formPlayerName.addEventListener("submit", getPlayerName);
 cupOneDom.addEventListener("click", selectCup);
 
+cupTwoDom.addEventListener("click", selectCup);
+cupThreeDom.addEventListener("click", selectCup);
 
 
 // score
