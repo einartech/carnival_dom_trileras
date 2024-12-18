@@ -12,10 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <title>Trileras</title>
-    <!-- Sonido principal del juego -->
-    <audio id="myAudio" controls>
-        <source src="Sound/80-synth-music-2-14672.mp3" type="audio/mpeg">
-      </audio>
+
 </head>
 
 <body>
@@ -42,6 +39,14 @@
 
             <div class="reset-game-container">
                 <button>Reset game</button>
+                
+                <!-- Sonido principal del juego -->
+                <div id="audio-container">
+    <audio id="myAudio" controls>
+        <source src="Sound/80-synth-music-2-14672.mp3" type="audio/mpeg">
+      </audio>
+      <button onclick="document.getElementById('myAudio').play()">♫Play 4 Music♫</button>
+</div>
             </div>
 
             <!-- Formulario de inicio de juego -->
