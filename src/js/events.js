@@ -13,7 +13,6 @@ let formPlayerName = document.getElementById("start-form");
 document.addEventListener("DOMContentLoaded", loadWelcome);
 formPlayerName.addEventListener("submit", getPlayerName);
 
-
   // Jugador elige el vaso 
 
   
