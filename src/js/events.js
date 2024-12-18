@@ -16,8 +16,8 @@ formPlayerName.addEventListener("submit", getPlayerName);
 
 // score
 
-const winButton = document.getElementById('winButton');
-winButton.addEventListener('click', incrementScore);
+//const winButton = document.getElementById('winButton');
+//winButton.addEventListener('click', incrementScore);
 
 
 

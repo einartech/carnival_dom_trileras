@@ -10,15 +10,36 @@
   border: 1px solid #ff901f (255, 144, 31);
 }
 
+.imagenes-cont{
+  justify-content: space-around;
+  background-color: #8c1eff ;
+  display: flex;
+  flex-direction: row;
+  
+}
+
 .vasos {
   width: 30%;
 }
 
-.pelota {
-  width: 8%;
-  
+
+.cont-pelota{
+height: 100%;
+width: 100%;
+background-color: #c82333;
+display: flex;
+flex-direction: row;
+justify-content: center;
+
 }
 
+.pelota {
+  position: absolute;
+  width: 8%;
+  justify-content: center;
+  top: 550px;
+  display: flex;
+}
 
 
 

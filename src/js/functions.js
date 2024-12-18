@@ -88,8 +88,16 @@ function defaultGameInfo() {
 
 function startTrileras(gameElements) {
 //console.log("nuestra funcion")
+setTimeout(() => {
+    console.log("El juego esta a punto de empezar.");
+    moveCups();
 
-moveCups();
+  }, 5000);
+
+
+
+
+
 if (gameElements.elementCupOne === true && gameElements.ball=== true) {
     console.log("La pelota se encuentra en la copa 1")
     } else if (gameElements.elementCupTwo === true && gameElements.ball=== true) { 
@@ -105,18 +113,80 @@ if (gameElements.elementCupOne === true && gameElements.ball=== true) {
 
 function moveCups() {
     console.log("cups moved")
-    const cup =  document.querySelector(".vasos");
-
 const cupOne = document.querySelector("#cup1")
-
+console.log(cupOne)
 const cupTwo = document.querySelector("#cup2")
-
+console.log(cupTwo)
 const cupThree = document.querySelector("#cup3")
-
+console.log(cupThree)
 const ball = document.querySelector(".pelota");
+console.log(ball)
+ball.setAttribute('style', 'top: 2000px');
 
+const vasosPadre = document.querySelector('.imagenes-cont')
+console.log(vasosPadre)
+
+setTimeout(() => {
+    vasosPadre.setAttribute('style', 'justify-content: center')
+
+  }, 2000);
+
+
+  setTimeout(() => {
+    vasosPadre.setAttribute('style', 'flex-direction: column')
+
+  }, 3000);
+
+  setTimeout(() => {
+    vasosPadre.setAttribute('style', 'flex-direction: row-reverse')
+
+  }, 4000);
+
+  setTimeout(() => {
+    vasosPadre.setAttribute('style', 'flex-direction: column-reverse')
+
+  }, 5000);
+
+  setTimeout(() => {
+    vasosPadre.setAttribute('style', 'flex-direction: row')
+
+  }, 6000);
+
+  setTimeout(() => {
+    vasosPadre.setAttribute('style', 'justify-content: center')
+
+  }, 7000);
+
+
+  setTimeout(() => {
+    vasosPadre.setAttribute('style', 'flex-direction: column')
+
+  }, 8000);
+
+  setTimeout(() => {
+    vasosPadre.setAttribute('style', 'flex-direction: row-reverse')
+
+  }, 9000);
+
+  setTimeout(() => {
+    vasosPadre.setAttribute('style', 'flex-direction: column-reverse')
+
+  }, 10000);
+
+  setTimeout(() => {
+    vasosPadre.setAttribute('style', 'flex-direction: row')
+
+  }, 11000);
 
 }
+
+
+
+
+
+
+
+
 export { loadWelcome,getPlayerName }
 
 
