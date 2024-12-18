@@ -1,27 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
 
-/* Contenedor principal del juego */
 .main-container {
-  /*contenedor flex*/
   display: flex;
-  /*lineas multiples si no caben en una sola*/
   flex-wrap: wrap;
-  /*centramos elelemtos hijos a lo largo del eje transversal*/
   align-items: center;
-  /*organiza los elementos hijos en columna*/
   flex-direction: column;
-  /*ajusta en copntenido al contenedor*/
   object-fit: cover;
-  /* distribuye espacio libre entre los elementos hijos*/
   justify-content: space-between;
-  /*altura minima del contenedor automaicamente*/
-  min-height: auto;
+  height: 100%;
+  width: 100%;
   background-color: #161648;
 }
 
 .imagenes-cont {
   justify-content: space-around;
-  background-color: #8c1eff;
+  background-color: #161648;
   display: flex;
   flex-direction: row;
 
@@ -29,10 +22,14 @@
 
 .vasos {
   width: 30%;
+  margin-bottom: 1rem;
+
 }
 
 
 .cont-pelota {
+  grid-row: 1;
+  grid-column: 1;
   height: 100%;
   width: 100%;
   background-color: #c82333;
@@ -43,24 +40,17 @@
 }
 
 .pelota {
-  position: absolute;
   width: 8%;
   justify-content: center;
-  top: 550px;
+  /* margin-bottom: 54%; */
   display: flex;
 }
 
-/* Contenedor del formulario de inicio */
 .start-game-container {
-  /* contenedor flex*/
   display: flex;
-  /*los centra en columna*/
   flex-direction: column;
-  /*los ceentra a lo largo del eje principal*/
   justify-content: center;
-  /*a lo largo del eje transversal*/
   align-items: center;
-  /*alinea los textos dentro dwel contenedor*/
   text-align: center;
   margin: 5px;
   padding: 20px;
@@ -69,17 +59,12 @@
   max-width: 400px;
 }
 
-/* Estilo del formulario */
 form {
-  /*contenedor flex*/
   display: flex;
-  /*los elementos del formulario en una columna*/
   flex-direction: column;
-  /*añade espacio entre los elementos*/
   gap: 10px;
 }
 
-/* Estilo del campo de texto para ingresar el nombre */
 #player-name {
   padding: 10px;
   font-size: 16px;
@@ -89,7 +74,6 @@ form {
   box-sizing: border-box;
 }
 
-/* Estilo para el botón de iniciar juego */
 button {
   background-color: black;
   color: rgb(255, 0, 255);
@@ -105,7 +89,6 @@ button:hover {
   color: black;
 }
 
-/* Contenedor para el botón de reset */
 .reset-game-container {
   display: flex;
   align-items: center;
@@ -114,9 +97,9 @@ button:hover {
   height: 100%;
   width: 100%;
   color: white;
+  padding-top: 50px;
 }
 
-/* Estilo para el botón de reset */
 .reset-btn {
   padding: 10px 20px;
   border-radius: 20px;
@@ -125,31 +108,23 @@ button:hover {
   transition: background-color 0.3s;
 }
 
-.
-/*estilos para movil*/
-
-@media screen and(max-width: 480px) {
+. @media screen and(max-width: 480px) {
     {
     font-size: 1rem;
     transition: all 300ms ease-in-out;
-    /* Ajusta el tiempo de transición */
   }
 }
 
-/* Estilos  para tablettes */
 @media screen and (min-width: 768px) {
     {
     font-size: 2rem;
     transition: all 300ms ease-in-out;
-    /* Ajusta el tiempo de transición */
   }
 }
 
-/* Estilos  para desktops */
 @media screen and (min-width: 1024px) {
     {
     font-size: 3rem;
     transition: all 300ms ease-in-out;
-    /* Ajusta el tiempo de transición */
   }
 }

@@ -1,108 +1,24 @@
-import { printVar,typeVar } from '/src/js/helper.js';
-import { loadWelcome,getPlayerName,selectCup } from '/src/js/functions.js';
+import {
+    loadWelcome,
+    getPlayerName,
+    selectCup1,
+    selectCup2,
+    selectCup3
+} from '/src/js/functions.js';
 
-//DOM ELEMENTS:
 let formPlayerName = document.getElementById("start-form");
+const cupOneDom = document.querySelector("#cup1");
+const cupTwoDom = document.querySelector("#cup2");
+const cupThreeDom = document.querySelector("#cup3");
+const resetButton = document.querySelector("resetButon");
 
-const cupOneDom = document.querySelector("#cup1")
-const cupTwoDom = document.querySelector("#cup2")
-const cupThreeDom = document.querySelector("#cup3")
-//EVENTS:
-
-// document.addEventListener("DOMContentLoaded", loadWelcome)
 
 document.addEventListener("DOMContentLoaded", loadWelcome);
 formPlayerName.addEventListener("submit", getPlayerName);
-cupOneDom.addEventListener("click", selectCup);
-
-cupTwoDom.addEventListener("click", selectCup);
-cupThreeDom.addEventListener("click", selectCup);
 
 
-// score
+cupOneDom.addEventListener("click", selectCup1);
+cupTwoDom.addEventListener("click", selectCup2);
+cupThreeDom.addEventListener("click", selectCup3);
 
-//const winButton = document.getElementById('winButton');
-//winButton.addEventListener('click', incrementScore);
-
-
-
-
-
-  // Jugador elige el vaso 
-  // let playerChoice = parseInt(prompt("Elige un vaso (1, 2 o 3):")); // Input del jugador
-  // playGame(playerChoice);
-  
-  //Click on cup
-  // const cup =  document.getElementsByClassName("vasos");
-
-//console.log(cup)
- // 
- // console.log(ball)
-//const startGame = document.querySelector("#openmodal")
-//console.log(startGame)
-
-//const moveCups {
- // const ball = document.querySelector(".pelota");
-//ball.addClass('isHidden');
-//   ball.setInterval(function(){()},time * 1000)<img class="pelota" src="src/img/pelota.jpg" alt="pelota para jugar">
-// }
-
-//   function winAlert {
-// if {
-
-// }
-//   }
-
-// cup.addEventListener("click", moveCup);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // formulario de inicio
-// document.getElementById('start-form').addEventListener('submit', function(event) {
-//     event.preventDefault();
-
-//     // Obtener nombre del jugador
-//     const playerName = document.getElementById('player-name').value.trim();
-
-//     // Validar el nombre 
-//     if (validatePlayerName(playerName)) {
-//         // Si es válido, actualizamos el nombre del jugador y comenzamos el juego
-//         updatePlayerName(playerName);
-//         startGame();
-//     } else {
-//         // Si es inválido, alerta
-//         alert("Por favor, ingresa solo letras en el nombre.");
-//     }
-// });
-
-// // Botón de reinicio del juego
-// document.getElementById('reset-btn').addEventListener('click', function() {
-//     resetGame();
-// });
-
-
-
-
+// resetButton.addEventListener("click",resetFunction)
