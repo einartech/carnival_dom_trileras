@@ -1,72 +1,24 @@
-import { printVar,typeVar } from '/src/js/helper.js';
-import { loadWelcome,getPlayerName } from '/src/js/functions.js';
+import {
+    loadWelcome,
+    getPlayerName,
+    selectCup1,
+    selectCup2,
+    selectCup3
+} from '/src/js/functions.js';
 
-//DOM ELEMENTS:
 let formPlayerName = document.getElementById("start-form");
+const cupOneDom = document.querySelector("#cup1");
+const cupTwoDom = document.querySelector("#cup2");
+const cupThreeDom = document.querySelector("#cup3");
+const resetButton = document.querySelector("resetButon");
 
-
-
-//EVENTS:
-
-// document.addEventListener("DOMContentLoaded", loadWelcome)
 
 document.addEventListener("DOMContentLoaded", loadWelcome);
 formPlayerName.addEventListener("submit", getPlayerName);
 
-  // Jugador elige el vaso 
 
-  
+cupOneDom.addEventListener("click", selectCup1);
+cupTwoDom.addEventListener("click", selectCup2);
+cupThreeDom.addEventListener("click", selectCup3);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // formulario de inicio
-// document.getElementById('start-form').addEventListener('submit', function(event) {
-//     event.preventDefault();
-
-//     // Obtener nombre del jugador
-//     const playerName = document.getElementById('player-name').value.trim();
-
-//     // Validar el nombre 
-//     if (validatePlayerName(playerName)) {
-//         // Si es válido, actualizamos el nombre del jugador y comenzamos el juego
-//         updatePlayerName(playerName);
-//         startGame();
-//     } else {
-//         // Si es inválido, alerta
-//         alert("Por favor, ingresa solo letras en el nombre.");
-//     }
-// });
-
-// // Botón de reinicio del juego
-// document.getElementById('reset-btn').addEventListener('click', function() {
-//     resetGame();
-// });
-
-
-
-
+// resetButton.addEventListener("click",resetFunction)

@@ -1,152 +1,123 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-  
-
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
 header {
-    
-    height: auto;
-    width: auto;
-    border: 1px solid red;
+  height: auto;
+  width: auto;
 }
 
 .header-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 10px;
-    align-items: center;
-    
-    transition: all 300ms ease-in-out; /* Ajusta el tiempo de transición */
-    height: 50%;
-    width: 100%;
-    border: 1px solid orange;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 50%;
+  width: 100%;
 }
 
 .player-info {
-    border: 1px solid rgb(0, 150, 0);
-    border: 1px solid rgb(0, 255, 225);
-    font-size: 3rem;
-    color: #faf4f4;
-    font-family: Bungee;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  color: #faf4f4;
+  font-family: Bungee;
+  padding: 10px;
 }
 
 .player-name {
-    background-color: black;
-    border: 1px solid rgb(0, 255, 225);
-    font-size: 3rem;
-    border-radius: 20px;
-    color: #faf4f4;
-    font-family: Bungee;
-    margin-bottom: 20px;
-    text-align: center;
+  background-color: black;
+
+  border-radius: 20px;
+  color: #faf4f4;
+  font-family: Bungee;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.player-total-score{
-    background-color: black;
-    border: 1px solid rgb(0, 255, 225);
-    font-size: 3rem;
-    border-radius: 20px;
-    color: #faf4f4;
-    font-family: Bungee;
-    margin-bottom: 20px;
-    text-align: center;
+.player-total-score {
+  background-color: black;
+
+  border-radius: 20px;
+  color: #faf4f4;
+  font-family: Bungee;
+  margin-bottom: 20px;
+  text-align: center;
 }
 .player-current-score {
-    background-color: black;
-    border: 1px solid rgb(0, 255, 225);
-    border-radius: 20px;
-    color: #faf4f4;
-    font-family: Bungee;
-    margin-bottom: 20px;
-    text-align: center;
+  background-color: black;
+
+  border-radius: 20px;
+  color: #faf4f4;
+  font-family: Bungee;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .player-timer {
-    background-color: black;
-    border: 1px solid rgb(0, 255, 225);
-    font-size: 3rem;
-    border-radius: 20px;
-    color: #faf4f4;
-    font-family: Bungee;
-    margin-bottom: 20px;
-    text-align: center;
+  background-color: black;
+
+  border-radius: 20px;
+  color: #faf4f4;
+  font-family: Bungee;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-/*quiero que las transiciones no sean tan duras*/
-.player-info,
-.player-name,
-.player-total-score,
-.player-timer {
-    font-size: 3rem;/*medidas letra para que se vea bien*/
-    transition: all 300ms ease-in-out;/*tiempo transicion*/
-}
+@media screen and(max-width: 480px) {
+  .player-info,
+  .player-name,
+  .player-total-score,
+  .player-timer {
+    font-size: 1rem;
+  }
+  .header-container {
+    justify-content: space-between;
 
+    font-size: 1rem;
+    transition: all 300ms ease-in-out; /* Ajusta el tiempo de transición */
+  }
 
-@media screen and(max-width: 480px){
-    .player-info,
-    .player-name,
-    .player-total-score,
-    .player-timer {
-        font-size: 1rem;
-    }
-
-    .header-container {
-        flex-direction: row;
-        justify-content: space-between;
-        height: auto;
-        width: 100%;
-    }
-
-    .button-container { 
+  .button-container {
     gap: 15px;
-    }
+  }
 
-    .button {
-        padding: 10px 15px;
-        font-size: 1rem;
-    }
-
-    
+  .button {
+    padding: 10px 15px;
+  }
 }
-    
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    /* Estilos específicos para tablets */
-    .player-info,
-    .player-name,
-    .player-total-score,
-    .player-timer {
-        font-size: 2rem;
-    }
-    .header-container {
-        flex-direction: row;
-        justify-content: space-between;
-        height: auto;
-        width: 100%;
-    }
+  /* Estilos específicos para tablets */
+  .player-info,
+  .player-name,
+  .player-total-score,
+  .player-timer {
+    font-size: 2rem;
+  }
+  .header-container {
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    transition: all 300ms ease-in-out; /* Ajusta el tiempo de transición */
+  }
 
-    .button-container { 
+  .button-container {
     gap: 15px;
-    }
-
-
+  }
 }
 @media screen and (min-width: 1024px) {
-    /* Estilos específicos para desktops */
-    .player-info,
-    .player-name,
-    .player-total-score,
-    .player-timer {
-        font-size: 3rem;
-    }
-    .header-container {
-        flex-direction: row;
-        justify-content: space-between;
-        height: auto;
-        width: 100%;
-    }
+  /* Estilos específicos para desktops */
+  .player-info,
+  .player-name,
+  .player-total-score,
+  .player-timer {
+    font-size: 3rem;
+  }
+  .header-container {
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    transition: all 300ms ease-in-out; /* Ajusta el tiempo de transición */
+  }
 
-    .button-container { 
+  .button-container {
     gap: 15px;
-    }
+  }
 }

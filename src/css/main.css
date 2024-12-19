@@ -1,4 +1,5 @@
-/* Contenedor principal del juego */
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
 .main-container {
   display: flex;
   flex-wrap: wrap;
@@ -6,47 +7,64 @@
   flex-direction: column;
   object-fit: cover;
   justify-content: space-between;
-  min-height: auto;
-  border: 1px solid #ff901f (255, 144, 31);
+  height: 100%;
+  width: 100%;
+  background-color: #161648;
+}
+
+.imagenes-cont {
+  justify-content: space-around;
+  background-color: #161648;
+  display: flex;
+  flex-direction: row;
+
 }
 
 .vasos {
   width: 30%;
+  margin-bottom: 1rem;
+
+}
+
+
+.cont-pelota {
+  grid-row: 1;
+  grid-column: 1;
+  height: 100%;
+  width: 100%;
+  background-color: #c82333;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
 }
 
 .pelota {
   width: 8%;
+  justify-content: center;
+  /* margin-bottom: 54%; */
+  display: flex;
 }
 
-
-
-
-/* Contenedor del formulario de inicio */
 .start-game-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* background-color: #ffd319 (255, 211, 25); */
-  background-color: #c82333;
-
-  border: 2px solid #8c1eff (140, 30, 255);
+  margin: 5px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 80%;
   max-width: 400px;
 }
 
-/* Estilo del formulario */
 form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-/* Estilo del campo de texto para ingresar el nombre */
 #player-name {
   padding: 10px;
   font-size: 16px;
@@ -56,25 +74,21 @@ form {
   box-sizing: border-box;
 }
 
-/* Estilo para el botón de iniciar juego */
 button {
-  padding: 10px 20px;
-  background-color: #f222ff (242, 34, 255);
-  color: #ffd319 (255, 211, 25);
-  border: none;
-  border-radius: 5px;
+  background-color: black;
+  color: rgb(255, 0, 255);
+  border-radius: 20px;
+  border-top: 5px;
+  border-color: rgb(101, 215, 231);
   cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
+  font-size: 15px;
 }
 
 button:hover {
-  background-color: #ff2975 (255, 41, 117);
+  background-color: rgb(255, 0, 255);
+  color: black;
 }
 
-
-
-/* Contenedor para el botón de reset */
 .reset-game-container {
   display: flex;
   align-items: center;
@@ -82,16 +96,13 @@ button:hover {
   justify-content: space-between;
   height: 100%;
   width: 100%;
-  border: 1px solid orange;
+  color: white;
+  padding-top: 50px;
 }
 
-/* Estilo para el botón de reset */
-#reset-btn {
+.reset-btn {
   padding: 10px 20px;
-  background-color: #dc3545;
-  color: #ffd319 (255, 211, 25);
-  border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s;
@@ -104,19 +115,24 @@ button:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 20px; /* Espacio para separar del contenido anterior */
+  margin-top: 20px;
+  /* Espacio para separar del contenido anterior */
 }
 
 #audio-container audio {
-  display: none; /* Oculta el reproductor predeterminado */
+  display: none;
+  /* Oculta el reproductor predeterminado */
 }
 
 #audio-container button {
-  background-color: #f222ff; /* Color del botón */
-  color: #fff; /* Texto blanco en el botón */
+  background-color: #f222ff;
+  /* Color del botón */
+  color: #fff;
+  /* Texto blanco en el botón */
   padding: 15px 25px;
   border: none;
-  border-radius: 50%; /* Forma redonda */
+  border-radius: 50%;
+  /* Forma redonda */
   font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -124,32 +140,95 @@ button:hover {
 }
 
 #audio-container button:hover {
-  background-color: #8c1eff; /* Color del botón cuando se pasa el ratón */
+  background-color: #8c1eff;
+  /* Color del botón cuando se pasa el ratón */
 }
 
 #audio-container button:focus {
-  outline: none; /* Elimina el borde de enfoque */
+  outline: none;
+  /* Elimina el borde de enfoque */
 }
 
 /* Estilo para el texto "¡Dale al play!" */
 #play-text {
   font-size: 18px;
-  color: #000; /* Texto en negro */
+  color: #000;
+  /* Texto en negro */
   margin-top: 10px;
   font-weight: bold;
 }
 
 
 
-#reset-btn:hover {
-  background-color: #c82333;
+/* Estilo reproductor audio */
+/* Ocultar el reproductor de audio predeterminado */
+#audio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  /* Espacio para separar del contenido anterior */
 }
 
-/*estilos para mobil*/
-@media screen and(max-width: 480px) {}
+#audio-container audio {
+  display: none;
+  /* Oculta el reproductor predeterminado */
+}
 
-/* Estilos  para tablettes */
-@media screen and (min-width: 768px) {}
+#audio-container button {
+  background-color: #f222ff;
+  /* Color del botón */
+  color: #fff;
+  /* Texto blanco en el botón */
+  padding: 15px 25px;
+  border: none;
+  border-radius: 50%;
+  /* Forma redonda */
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+}
 
-/* Estilos  para desktops */
-@media screen and (min-width: 1024px) {}
+#audio-container button:hover {
+  background-color: #8c1eff;
+  /* Color del botón cuando se pasa el ratón */
+}
+
+#audio-container button:focus {
+  outline: none;
+  /* Elimina el borde de enfoque */
+}
+
+/* Estilo para el texto "¡Dale al play!" */
+#play-text {
+  font-size: 18px;
+  color: #000;
+  /* Texto en negro */
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+
+. @media screen and(max-width: 480px) {
+    {
+    font-size: 1rem;
+    transition: all 300ms ease-in-out;
+  }
+}
+
+@media screen and (min-width: 768px) {
+    {
+    font-size: 2rem;
+    transition: all 300ms ease-in-out;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+    {
+    font-size: 3rem;
+    transition: all 300ms ease-in-out;
+  }
+}
