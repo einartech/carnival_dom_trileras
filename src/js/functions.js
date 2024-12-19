@@ -227,7 +227,9 @@ function myAlertLose(message) {
     myMessageAlert = message;
 } 
 
-
+function resetFunction(){
+  console.log("reseting the game")
+}
 
 
 export {
@@ -235,5 +237,6 @@ export {
   getPlayerName,
   selectCup1,
   selectCup2,
-  selectCup3
+  selectCup3,
+  resetFunction
 }
