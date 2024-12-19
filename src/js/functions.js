@@ -33,7 +33,7 @@ function setPlayerName(playerName) {
   let updatePlayerName = document.querySelector(".player-name");
   updatePlayerName.textContent = playerName;
 
-  setTimeout(hidePlayerModal, 4000);
+  setTimeout(hidePlayerModal, 2000);
 
 }
 
@@ -48,7 +48,7 @@ function incrementScore() {
   const scoreElement = document.querySelector('.score');
   let currentScore = parseInt(scoreElement.textContent);
   let newScore = currentScore + 1;
-  scoreElement.textContent = newScore;
+  scoreElement.textContent = newScore ;
   console.log(gameElements)
   startTrileras(gameElements);
 }
@@ -228,7 +228,7 @@ function myAlertLose(message) {
 } 
 
 function resetFunction(){
-  console.log("reseting the game")
+console.log("pendiente de crear")
 }
 
 
