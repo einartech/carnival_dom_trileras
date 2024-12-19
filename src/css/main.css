@@ -46,7 +46,6 @@
 .pelota {
   width: 8%;
   justify-content: center;
-  /* margin-bottom: 54%; */
   display: flex;
 }
 
@@ -116,31 +115,25 @@ button:hover {
   transition: background-color 0.3s;
 }
 
-/* Estilo reproductor audio */
-/* Ocultar el reproductor de audio predeterminado */
 #audio-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-top: 20px;
-  /* Espacio para separar del contenido anterior */
+
 }
 
 #audio-container audio {
   display: none;
-  /* Oculta el reproductor predeterminado */
 }
 
 #audio-container button {
   background-color: #f222ff;
-  /* Color del botón */
   color: #fff;
-  /* Texto blanco en el botón */
   padding: 15px 25px;
   border: none;
   border-radius: 50%;
-  /* Forma redonda */
   font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -149,50 +142,38 @@ button:hover {
 
 #audio-container button:hover {
   background-color: #8c1eff;
-  /* Color del botón cuando se pasa el ratón */
 }
 
 #audio-container button:focus {
   outline: none;
-  /* Elimina el borde de enfoque */
 }
 
-/* Estilo para el texto "¡Dale al play!" */
 #play-text {
   font-size: 18px;
   color: #000;
-  /* Texto en negro */
   margin-top: 10px;
   font-weight: bold;
 }
 
 
-
-/* Estilo reproductor audio */
-/* Ocultar el reproductor de audio predeterminado */
 #audio-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-top: 20px;
-  /* Espacio para separar del contenido anterior */
 }
 
 #audio-container audio {
   display: none;
-  /* Oculta el reproductor predeterminado */
 }
 
 #audio-container button {
   background-color: #f222ff;
-  /* Color del botón */
   color: #fff;
-  /* Texto blanco en el botón */
   padding: 15px 25px;
   border: none;
   border-radius: 50%;
-  /* Forma redonda */
   font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -201,23 +182,18 @@ button:hover {
 
 #audio-container button:hover {
   background-color: #8c1eff;
-  /* Color del botón cuando se pasa el ratón */
 }
 
 #audio-container button:focus {
   outline: none;
-  /* Elimina el borde de enfoque */
 }
 
-/* Estilo para el texto "¡Dale al play!" */
 #play-text {
   font-size: 18px;
   color: #000;
-  /* Texto en negro */
   margin-top: 10px;
   font-weight: bold;
 }
-
 
 
 . @media screen and(max-width: 480px) {

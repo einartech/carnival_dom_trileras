@@ -1,71 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
 font {
-  color:  white;
+  color: white;
   font-family: bungee;
   font-size: 15px;
 }
 
 .coders {
-  /*define contenedor flex, para distribuir elementos*/
   display: flex;
-  /*organiza los hijos en columna*/
   flex-direction: column;
   height: 100%;
   width: 100%;
-
-  /*margen arriba y abjo contenedor*/
   margin-block: 10px;
-  /*relleno interno*/
   padding: 15px;
 }
 
 .content-wrapper {
-  /*contenedor flex*/
   display: flex;
-  /*oraniza los hijos en columnas*/
   flex-direction: column;
-  /*permite expansion contenedor para ocupar espacio disponible*/
   flex: 1;
 }
 
 .content {
-  /*expansion ontenedor espacio disponible*/
   flex: 1;
-  /* contenedor flex*/
   display: flex;
-  /*elementos hijos en columna*/
-  flex-direction: column; /* Móvil y tablet: los <p> uno encima del otro */
-  /* añade espacio 10px entre los hijos*/
+  flex-direction: column;
   gap: 10px;
 }
 
 .footer-container {
-  /*contenedor flex*/
   display: flex;
-  /*distribucion de los hijos a lo largo del eje principal entre ellos*/
   justify-content: space-between;
   align-items: center;
-  /*distribucion de los hijos entre el eje transversal*/
-  flex-direction: column; /* organiza hijos en columnas */
-  /*ajusta al 100% contenedor padre*/
+  flex-direction: column;
   height: 100%;
   width: 100%;
   color: white;
 }
 
-.footer-container > * {
-  /*aplica margen vertical a todos los hijos directos de footer-container*/
-  margin: 10px 0; /* Agregar margen vertical entre los elementos */
+.footer-container>* {
+  margin: 10px 0;
 }
 
 @media screen and (min-width: 768px) {
   .content {
-    flex-direction: column; /* Tablet: los <p> uno encima del otro */
+    flex-direction: column;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  /*ajusta tamaño fuente padding y margen de .coders*/
   .coders {
     font-size: 3rem;
     padding: 5px;
@@ -73,22 +56,18 @@ font {
   }
 
   .content-wrapper {
-    /*cambia la direccion de flexion de content a fila, y asi los pone uno al lado de otro*/
     flex-direction: row;
   }
 
   .content {
-    /*cambia a fila la flexion de .footer-container*/
-    flex-direction: row; /* Escritorio: los <p> uno al lado del otro */
+    flex-direction: row;
   }
 
   .footer-container {
-    /*cambia flexion a fila*/
-    flex-direction: row; /* Cambiar a fila para escritorio */
+    flex-direction: row;
   }
 
-  .footer-container > * {
-    /* ajusta margen horizontal enre los hijos de footer-container*/
-    margin: 0 10px; /* Agregar margen horizontal entre los elementos */
+  .footer-container>* {
+    margin: 0 10px;
   }
 }

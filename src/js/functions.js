@@ -7,14 +7,13 @@ let gameElements = {
 
 
 function loadWelcome() {
-   console.log(`0 > loadWelcome >> All contents loaded`);
+  console.log(`0 > loadWelcome >> All contents loaded`);
 
 }
 
 function getPlayerName(event) {
   event.preventDefault();
   let getPlayerNameFromInput = document.getElementById('player-name').value;
-
   setPlayerName(getPlayerNameFromInput);
   showNewModal(getPlayerNameFromInput);
   defaultPlayerInfo(getPlayerNameFromInput);
@@ -26,29 +25,24 @@ function showNewModal(playerName) {
   getTitle.textContent = `${playerName} el juego de las Trileras esta a punto de empezar...`;
   let getform = document.querySelector("form");
   getform.style.display = "none";
-
 }
 
 function setPlayerName(playerName) {
   let updatePlayerName = document.querySelector(".player-name");
   updatePlayerName.textContent = playerName;
-
   setTimeout(hidePlayerModal, 2000);
-
 }
 
 function hidePlayerModal() {
   let myModal = document.querySelector(".start-game-container");
   myModal.style.display = "none";
-
-
 }
 
 function incrementScore() {
   const scoreElement = document.querySelector('.score');
   let currentScore = parseInt(scoreElement.textContent);
   let newScore = currentScore + 1;
-  scoreElement.textContent = newScore ;
+  scoreElement.textContent = newScore;
   console.log(gameElements)
   startTrileras(gameElements);
 }
@@ -66,12 +60,6 @@ function defaultPlayerInfo(playerName) {
 }
 
 function defaultGameInfo() {
-  //  gameElements = {
-  //     elementCupOne: false,
-  //     elementCupTwo: false,
-  //     elementCupThree: false,
-  //     ball: true,
-  // };
   startTrileras(gameElements)
 }
 
@@ -159,76 +147,64 @@ function moveCups() {
 }
 
 function selectCup1() {
-gameElements.elementCupOne=true;
-
-  console.log("hola soy select cup 1");
-  console.log(gameElements.elementCupOne);
-
+  gameElements.elementCupOne = true;
+  console.log("Has seleccionado el vaso 1");
   result();
-
-
 }
 
 function selectCup2() {
-  gameElements.elementCupTwo=true;
-  console.log("hola soy select cup 2");
-  console.log(gameElements.elementCupTwo);
-
+  gameElements.elementCupTwo = true;
+  console.log("Has seleccionado el vaso 2");
   result();
-
-
 }
 
 function selectCup3() {
-  gameElements.elementCupThree=true;
-  console.log("hola soy select cup 3");
-  console.log(gameElements.elementCupThree);
-
+  gameElements.elementCupThree = true;
+  console.log("Has seleccionado el vaso 3");
   result();
-
 }
 
 
-function result(){
-  if (gameElements.elementCupOne ===true && gameElements.ball === 1) {
-    myAlertWin("HAS GANADO, la pelota esta en el vaso 1")
-    incrementScore()
-} else if (gameElements.elementCupTwo === true && gameElements.ball === 2) {
-  myAlertWin("HAS GANADO, la pelota esta en el vaso 2")
-  incrementScore()
-} else if (gameElements.elementCupThree === true && gameElements.ball === 3) {
-  myAlertWin("HAS GANADO, la pelota esta en el vaso 3")
-  incrementScore()
-} else {
-  myAlertLose("HAS PERDIDO, intentalo otra vez!")
-  startTrileras(gameElements);
-}
+function result() {
+  if (gameElements.elementCupOne === true && gameElements.ball === 1) {
+      myAlertWin("HAS GANADO, la pelota esta en el vaso 1")
+      incrementScore()
+  } else if (gameElements.elementCupTwo === true && gameElements.ball === 2) {
+      myAlertWin("HAS GANADO, la pelota esta en el vaso 2")
+      incrementScore()
+  } else if (gameElements.elementCupThree === true && gameElements.ball === 3) {
+      myAlertWin("HAS GANADO, la pelota esta en el vaso 3")
+      incrementScore()
+  } else {
+      myAlertLose("HAS PERDIDO, intentalo otra vez!")
+      startTrileras(gameElements);
+  }
 }
 
-function myAlertWin(message) { 
-  let myAudio= document.createElement('audio');
+function myAlertWin(message) {
+  let myAudio = document.createElement('audio');
   let myMessageAlert = "Has ganado!";
   myAudio.src = 'Sound/win.mp3';
-  myAudio.addEventListener('ended', function(){
-      alert(myMessageAlert);            
+  myAudio.addEventListener('ended', function() {
+      alert(myMessageAlert);
   });
-    myAudio.play();
-    myMessageAlert = message;
-} 
+  myAudio.play();
+  myMessageAlert = message;
+}
 
-function myAlertLose(message) { 
-  let myAudio= document.createElement('audio');
+function myAlertLose(message) {
+  let myAudio = document.createElement('audio');
   let myMessageAlert = "Has perdido!";
   myAudio.src = 'Sound/game-over.mp3';
-  myAudio.addEventListener('ended', function(){
-      alert(myMessageAlert);            
+  myAudio.addEventListener('ended', function() {
+      alert(myMessageAlert);
   });
-    myAudio.play();
-    myMessageAlert = message;
-} 
+  myAudio.play();
+  myMessageAlert = message;
+}
 
-function resetFunction(){
-console.log("pendiente de crear")
+function resetFunction() {
+  console.log("pendiente de crear")
 }
 
 

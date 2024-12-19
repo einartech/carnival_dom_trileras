@@ -17,7 +17,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <title>Trileras</title>
-
 </head>
 
 <body>
@@ -45,8 +44,6 @@
             </div>
             <div class="reset-game-container">
                 <button class="resetButon">Reset game</button>
-
-                <!-- Sonido principal del juego -->
                 <div id="audio-container">
                     <audio id="myAudio" controls>
                         <source src="Sound/fondo.mp3" type="audio/mpeg">
@@ -54,7 +51,6 @@
                     <button onclick="document.getElementById('myAudio').play()">♫Play 4 Music♫</button>
                 </div>
             </div>
-            <!-- Formulario de inicio de juego -->
             <div class="start-game-container">
                 <h1 class="modal-title">¡Bienvenide al Juego de Trileras!</h1>
                 <form id="start-form">
@@ -68,15 +64,14 @@
                 </form>
             </div>
         </div>
-        <!-- Contenido del juego (se mostrará después de ingresar el nombre) -->
         <footer class="coders">
             <div class="footer-container">
                 <p>Project powered by f5</p>
                 <p>Alba,Tetiana,Karisha,Einar,Guadalupe</p>
             </div>
         </footer>
-        <script type="module" src="./src/js/functions.js"></script> <!-- Primero funciones.js -->
-        <script type="module" src="./src/js/events.js"></script> <!-- Luego events.js -->
+        <script type="module" src="./src/js/functions.js"></script>
+        <script type="module" src="./src/js/events.js"></script>
         <script type="module" src="./src/js/helper.js"></script>
 </body>
 
