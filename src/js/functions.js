@@ -191,19 +191,44 @@ function selectCup3() {
 
 function result(){
   if (gameElements.elementCupOne ===true && gameElements.ball === 1) {
-    alert("HAS GANADO, la pelota esta en el vaso 1");
+    myAlertWin("HAS GANADO, la pelota esta en el vaso 1")
     incrementScore()
 } else if (gameElements.elementCupTwo === true && gameElements.ball === 2) {
-  alert("HAS GANADO, la pelota esta en el vaso 2")
+  myAlertWin("HAS GANADO, la pelota esta en el vaso 2")
   incrementScore()
 } else if (gameElements.elementCupThree === true && gameElements.ball === 3) {
-  alert("HAS GANADO, la pelota esta en el vaso 3")
+  myAlertWin("HAS GANADO, la pelota esta en el vaso 3")
   incrementScore()
 } else {
-  alert("HAS PERDIDO, intentalo otra vez!")
+  myAlertLose("HAS PERDIDO, intentalo otra vez!")
   startTrileras(gameElements);
 }
 }
+
+function myAlertWin(message) { 
+  let myAudio= document.createElement('audio');
+  let myMessageAlert = "Has ganado!";
+  myAudio.src = 'Sound/win.mp3';
+  myAudio.addEventListener('ended', function(){
+      alert(myMessageAlert);            
+  });
+    myAudio.play();
+    myMessageAlert = message;
+} 
+
+function myAlertLose(message) { 
+  let myAudio= document.createElement('audio');
+  let myMessageAlert = "Has perdido!";
+  myAudio.src = 'Sound/game-over.mp3';
+  myAudio.addEventListener('ended', function(){
+      alert(myMessageAlert);            
+  });
+    myAudio.play();
+    myMessageAlert = message;
+} 
+
+
+
 
 export {
   loadWelcome,
